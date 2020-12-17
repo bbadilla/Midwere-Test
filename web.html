@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Midware Test</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    </body>
+        <!-- Title -->
+        <h1>Junior JS Test - Midware</h1>
+        <hr>
+        <!-- Show/Hide options -->
+        <div class= "btnContainer">
+            <button class="button" id="hiddenInstructions">Hide/Show Instructions</button>
+            <button class="button" id="hiddenBar">Hide/Show Progress Bar</button>
+            <button class="button" id="hiddenInfo">Hide/Show Developer Info</button>
+        <div>
+
+        <!-- instructions -->
+        <div id="instr">
+            <h2>Instructions</h2>
+            <ul >
+                <li>Write the real quantity in the "Quantity" input.</li>
+            
+                <li>Write the goal in the "Goal" input for calculate the percentage.</li>
+          
+                <li>Press the botton "Calculate" to calculate the percentage.</li>
+           
+                <li>Now the progress bar will change and show the calculated percentage.</li>
+            </ul>
+        </div>
+
+
+        <!-- Inputs -->
+        <div class="inputContainer">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter a quantity">
+        </div>
+
+        <div class="inputContainer">
+            <label for="goal">Goal:</label>
+            <input type="number" id="goal" placeholder="Enter a goal">
+        </div>
+
+        <!-- Calculate Botton -->
+        <div id="btnCalculate">
+             <button onclick="calculate()" class="button" id="calculate">Calculate</button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="progress">
+            <div id="bar">0%</div>
+        </div>
+
+        <!--Info Developer-->
+        <div id="infoContainer">
+            <h3>Page Developed by: Bryan Badilla</h3>
+        </div>
+
+        <!-- JS -->
+        <script src="app.js"></script>
+
+    </body>
+
+</html>
